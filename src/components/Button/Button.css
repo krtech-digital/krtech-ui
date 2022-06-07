@@ -1,16 +1,55 @@
 .button {
     border: none;
     color: white;
-    padding: 15px 32px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 15px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    margin-right: 5px;
 }
 
-.primary{background-color: blue;}
-.secondary{background-color: gray;}
-.success{background-color: green;}
-.danger{background-color: red;}
+.none,
+.noneShort
+{
+    background-color: #195273;
+}
+
+.noneShort
+{
+    padding: 15px 20px;
+}
+
+.hover,
+.hoverShort
+{
+    background-color: #555555;
+}
+
+.hoverShort
+{
+
+    padding: 15px 20px;
+}
+
+.active,
+.activeShort
+{
+    background-color: white;
+    color: #195293;
+    border: 2px solid #195293;
+
+}
+
+.activeShort
+{
+
+    padding: 15px 20px;
+}
