@@ -1,55 +1,46 @@
 .button {
-    border: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    padding: 15px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 5px;
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
 }
 
 .none,
-.noneShort
-{
-    background-color: #195273;
+.noneShort {
+  background-color: #195273;
 }
 
-.noneShort
-{
-    padding: 15px 20px;
+.noneShort {
+  padding: 15px 20px;
 }
 
 .hover,
-.hoverShort
-{
-    background-color: #555555;
+.hoverShort {
+  background-color: #555555;
 }
 
-.hoverShort
-{
-
-    padding: 15px 20px;
+.hoverShort {
+  padding: 15px 20px;
 }
 
 .active,
-.activeShort
-{
-    background-color: white;
-    color: #195293;
-    border: 2px solid #195293;
-
+.activeShort {
+  background-color: white;
+  color: #195293;
+  border: 2px solid #195293;
 }
 
-.activeShort
-{
-
-    padding: 15px 20px;
+.activeShort {
+  padding: 15px 20px;
 }
