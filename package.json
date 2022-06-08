@@ -45,6 +45,7 @@
     "dev:storybook": "start-storybook -p 6006",
     "dev:rollup": "rollup -cw",
     "dev:next": "next dev",
-    "dev": "concurrently --kill-others \"yarn dev:rollup\" \"yarn dev:storybook\" \"yarn dev:next\""
+    "dev:link": "yarn link && yarn link @krtech-digital/krtech-ui",
+    "dev": "yarn dev:link && concurrently --kill-others \"yarn dev:rollup\" \"yarn dev:storybook\" \"yarn dev:next\""
   }
 }
