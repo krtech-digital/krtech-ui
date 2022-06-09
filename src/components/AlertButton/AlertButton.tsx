@@ -1,13 +1,18 @@
 import React from "react";
 import "./AlertButton.css";
 
-function AlertButton(props: { [x: string]: any; variant: any; children: any }) {
-  const { variant, children, ...rest } = props;
-  return (
-    <button className={`button ${variant}`} {...rest}>
-      {children}
-    </button>
-  );
+function AlertButton(props: { [x: string]: any; variant: string; heading: string; message: string }) {
+	const { variant, heading, message, ...rest } = props;
+	return (
+		<div className={`alertButton ${variant}`} {...rest}>
+			<span className="close">&#215;</span>
+			<div className="icon"></div>
+			<div>
+				<div className="heading">{heading}</div>
+				<div className="message">{message}</div>
+			</div>
+		</div>
+	);
 }
 
 export default AlertButton;

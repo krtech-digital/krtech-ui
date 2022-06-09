@@ -1,0 +1,96 @@
+.alertButton {
+	background-color: rgba(249, 249, 249, 1);
+	border-radius: 5px 4px;
+	border-left: 4px solid #000;
+	padding: 24px 19px;
+	max-width: 252px;
+	display: flex;
+    justify-content: space-between;
+	position: relative;
+}
+
+.alertButton.message {
+	border-color: rgba(80, 186, 245, 1);
+}
+
+.alertButton.success {
+	border-color: rgba(161, 218, 141, 1);
+}
+
+.alertButton.alert {
+	border-color: rgba(253, 86, 86, 1);
+}
+
+.alertButton.info {
+	border-color: rgba(80, 186, 245, 1);
+}
+
+.alertButton .close {
+	color: #000;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	line-height: 10px;
+}
+
+.alertButton.message .close {
+	color: rgba(80, 186, 245, 1);
+}
+
+.alertButton.success .close {
+	color: rgba(161, 218, 141, 1);
+}
+
+.alertButton.alert .close {
+	color: rgba(253, 86, 86, 1);
+}
+
+.alertButton.info .close {
+	color: rgba(80, 186, 245, 1);
+}
+
+.alertButton .icon {
+	display: block;
+    width: 18px;
+	background-size: 18px auto;
+	background-repeat: no-repeat no-repeat;
+	margin-right: 20px;
+}
+
+.alertButton.message .icon {
+	background-image: url(../../../public/images/Envelope\ Message\ Received\ Icon.svg);
+}
+
+.alertButton.success .icon {
+	background-image: url(../../../public/images/Envelope\ Success\ Icon.svg);
+}
+
+.alertButton.alert .icon {
+	background-image: url(../../../public/images/Failed\ Icon.svg);
+}
+
+.alertButton.info .icon {
+	background-image: url(../../../public/images/Notice\ Icon.svg);
+}
+
+.alertButton .heading {
+	color: rgba(25, 82, 115, 1);
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 14px;
+	letter-spacing: 0.12em;
+	text-align: left;
+	margin-bottom: 7px;
+}
+
+.alertButton .message {
+	font-family: Roboto;
+	font-size: 9px;
+	font-weight: 400;
+	line-height: 13px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: rgba(130, 130, 130, 1);
+}
