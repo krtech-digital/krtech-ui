@@ -1,0 +1,48 @@
+.kui-file-upload {
+    border: 0.5px solid #D7D7D7;
+    border-radius: 5px;
+    padding: 0.25rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: fit-content;
+    height: 30px;
+}
+
+.kui-file-upload__button {
+    padding: 0.4rem;
+    background: #F5F4F4;
+    border: none;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.6rem;
+    width: 150px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #195273;
+    cursor: pointer;
+}
+
+.kui-file-upload__button.selected {
+    background: #195273;
+    color: #fff;
+}
+
+.kui-file-upload:hover .kui-file-upload__button:not(.selected) {
+    background: #E3E3E3;
+}
+
+.kui-file-upload__status {
+    margin-right: 0.75rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;  
+}
