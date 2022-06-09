@@ -13,6 +13,5 @@ export const WhiteButton = ({variant}: Props) => {
             </div>
         
     )
-
 }
 
