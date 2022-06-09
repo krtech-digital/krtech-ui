@@ -1,8 +1,16 @@
 import React from "react";
 import "./NavigationBar.css";
 
-function NavigationBar() {
-  return <div>NavigationBar</div>;
+export interface NavProps{
+    buttons:
+       {
+      url: string;
+      name: string;
+        }[]
+}
+function NavigationBar({buttons}:NavProps) {
+
+  return <div className="buttons">{buttons[0].url}</div>;
 }
 
 export default NavigationBar;

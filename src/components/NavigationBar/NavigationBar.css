@@ -1,0 +1,15 @@
+*{
+    
+}
+
+.buttons{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 13px;
+letter-spacing: 0.1em;
+font-feature-settings: 'pnum' on, 'onum' on;
+text-align: center;
+color: #195273;
+}
