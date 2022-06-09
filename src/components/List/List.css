@@ -1,0 +1,54 @@
+.list {
+  /*color: #828282;*/
+
+  /*font-family: "Roboto";*/
+  font-style: normal;
+  font-weight: 400;
+  /*font-size: 9px;*/
+  line-height: 16px;
+}
+
+ul,
+ol {
+  list-style: none !important;
+}
+
+ul li::before {
+  content: "\2022";
+
+  color: #195273;
+
+  display: inline-block;
+
+  width: 1em;
+
+  margin-left: -0.9em;
+}
+
+/*ol li::before {*/
+/*  content: "•";*/
+/*  color: #195273;*/
+/*  display: inline-block;*/
+/*  width: 1em;*/
+/*  margin-left: -1em;*/
+/*}*/
+
+.list ol li::before {
+  content: counter(li);
+  color: red;
+  /*display: inline-block;*/
+  /*width: 1em;*/
+  /*margin-left: -1.5em;*/
+  /*margin-right: 0.5em;*/
+  /*text-align: right;*/
+  /*direction: rtl;*/
+}
+/* {*/
+/*  content: "•";*/
+/*  color: #195273;*/
+/*}*/
+
+/*.list ol li::before {*/
+/*  content: "\25AA";*/
+/*  color: #195273;*/
+/*}*/
