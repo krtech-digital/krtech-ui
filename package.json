@@ -21,6 +21,7 @@
     "@types/react": "^17.0.39",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.7.1",
+    "concurrently": "^7.2.1",
     "postcss": "^8.4.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -39,12 +40,18 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "storybook-css-modules": "^1.0.7"
+    "storybook-css-modules": "^1.0.7",
+    "next": "^12.1.6"
   },
   "scripts": {
     "rollup": "rollup -c",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "dev:storybook": "start-storybook -p 6006",
+    "dev:rollup": "rollup -cw",
+    "dev:next": "next dev",
+    "dev:link": "yarn link && yarn link @krtech-digital/krtech-ui",
+    "dev": "yarn dev:link && concurrently --kill-others \"yarn dev:rollup\" \"yarn dev:storybook\" \"yarn dev:next\""
   }
 }
