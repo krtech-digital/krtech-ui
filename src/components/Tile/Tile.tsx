@@ -8,9 +8,8 @@ export interface ITileProps {
 }
 
 export const Tile = ({ title, variant, details }: ITileProps) => {
-  const titleWords = title.split(" ");
-  const firstTitleWord = titleWords[0];
-  const restTitleWords = titleWords.slice(1).join(" ");
+  const firstTitleWord = title.split(" ")[0];
+  const restTitleWords = title.split(" ").slice(1).join(" ");
 
   const tileActionIconSrc =
     variant === "documentation"
