@@ -1,0 +1,19 @@
+.pagination{
+    position: absolute;
+    width: 130px;
+    height: 9px;
+    left: 75px;
+    top: 175px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 9px;
+    letter-spacing: 0.07em;
+    font-feature-settings: 'pnum' on, 'onum' on;
+    
+    /* Deep Blue */
+    color: #195273;
+}
+

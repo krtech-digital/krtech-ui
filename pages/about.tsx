@@ -1,11 +1,10 @@
 import { Button } from "@krtech-digital/krtech-ui";
+import {Pagination} from "@krtech-digital/krtech-ui";
 
 const About = () => {
   return (
     <div className="App">
-      <Button variant={"hover"}>
-        <span>Test</span>
-      </Button>
+      <Pagination numberOfPages={12}/>
     </div>
   );
 };
