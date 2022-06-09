@@ -1,5 +1,3 @@
-import { Button } from "@krtech-digital/krtech-ui";
-
 const Index = () => {
   return (
     <div className="App">
