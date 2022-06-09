@@ -1,15 +1,13 @@
-{ 
+{
   "name": "@krtech-digital/krtech-ui",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
-    "publishConfig": {
-      "registry": "https://npm.pkg.github.com/krtech-ui"
-    },
-    "version": "0.1.0",
-    "description": "A simple template for a custom React component library",
-      
-
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/krtech-ui"
+  },
+  "version": "0.1.0",
+  "description": "A simple template for a custom React component library",
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@rollup/plugin-commonjs": "^21.0.2",
@@ -22,6 +20,7 @@
     "@storybook/testing-library": "^0.0.9",
     "@types/react": "^17.0.39",
     "babel-loader": "^8.2.3",
+    "concurrently": "^7.2.1",
     "postcss": "^8.4.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -35,11 +34,18 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "next": "^12.1.6"
+  },
   "scripts": {
     "rollup": "rollup -c",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "dev:storybook": "start-storybook -p 6006",
+    "dev:rollup": "rollup -cw",
+    "dev:next": "next dev",
+    "dev:link": "yarn link && yarn link @krtech-digital/krtech-ui",
+    "dev": "yarn dev:link && concurrently --kill-others \"yarn dev:rollup\" \"yarn dev:storybook\" \"yarn dev:next\""
   }
 }

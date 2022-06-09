@@ -31,7 +31,7 @@ export default {
     peerDepsExternal(),
     resolve(),
     commonjs(),
-    typescript({ useTsconfigDeclarationDir: true }),
+    typescript({ tsconfig: "./tsconfig.rollup.json" }),
     postcss({
       extensions: [".css"],
     }),
