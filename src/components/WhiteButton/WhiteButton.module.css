@@ -5,11 +5,62 @@
     grid-template-columns: 1fr;
     grid-template-rows: 0.7fr 0.3fr;
     grid-template-areas: 
-    "colorBar ico headerText cancel"
-    "colorBar . descriptionText .";
-    width: 30em;
-    min-height: 7em;
+    "message"
+    "button";
+    width: 25em;
+    min-height: 16em;
     height: auto;
-    background-color: #F9F9F9;
+    background-color: #195273;
     border-radius: 10px;
 }
+
+.text{
+    grid-area: message;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    text-align: center;
+    justify-self: center;
+    align-self: baseline;
+    width: 90%;
+    margin-top: 20px;
+    }
+
+    .buttonBox{
+        grid-area: button;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button,
+    .active,
+    .hover{
+        grid-area: button;
+        width: 90%;
+        height: 3.7em;
+        justify-self: center;
+        align-self: baseline;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.9rem;
+        letter-spacing: 0.07em;      
+    }
+
+    .active{
+        background-color: #ffffff;
+        color: #195273;
+    }
+
+    .hover{
+        background-color: #5881B0;
+        color: #ffffff;
+    }
