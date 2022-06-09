@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+.separatorBoxA,
+.separatorBoxB,
+.separatorBoxC{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+grid-template-areas: 
+"t1"
+"t2"
+"t3"
+"t4";
+}
+
+.separatorBoxA{
+    width: 15em;
+    min-height: 17em;
+    }
+
+.separatorBoxB{
+    width: 15em;
+    min-height: 14em;
+    }
+
+.separatorBoxC{
+    width: 15em;
+    min-height: 20em;
+    }
+
+.t1A,
+.t2A,
+.t3A,
+.t4A,
+.t1B,
+.t2B,
+.t3B,
+.t4B,
+.t1C,
+.t2C,
+.t3C,
+.t4C  {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.07em;
+    color: #828282;
+    text-decoration: none;
+    border-bottom: 1px solid #828282;    
+}
+
+.t1A,
+.t2A,
+.t3A,
+.t4A {
+    text-align: left;
+    align-self: center;
+    padding-bottom: 25px;
+}
+
+.t1B,
+.t2B,
+.t3B,
+.t4B {
+    text-align: center;
+    align-self: center;
+    padding-bottom: 15px;
+}
+
+.t1C,
+.t2C,
+.t3C,
+.t4C {
+    text-align: center;
+    align-self: center;
+    padding-bottom: 30px;
+}
+
+.t1A,
+.t1B,
+.t1C{
+    grid-area: t1;
+}
+.t2A,
+.t2B,
+.t2C{
+    grid-area: t2;
+}
+.t3A,
+.t3B,
+.t3C{
+    grid-area: t3;
+}
+.t4A
+.t4B,
+.t4C{
+    grid-area: t4;
+}
