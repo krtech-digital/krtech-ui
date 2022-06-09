@@ -6,5 +6,5 @@ export default {
 };
 
 export function Default() {
-  return <Checkbox label={"Check this shits out"} />;
+  return <Checkbox label={"Check this out"} />;
 }
