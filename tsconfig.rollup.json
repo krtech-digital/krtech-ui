@@ -16,9 +16,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+    "jsx": "react"
   },
   "include": ["src"],
   "exclude": ["node_modules", "lib"]
