@@ -1,0 +1,40 @@
+.list-choice {
+  color: #828282;;
+  list-style: none;
+}
+
+.list-choice li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Numbered List */
+.list-choice-numbered {
+  counter-reset: item;
+}
+
+.list-choice-numbered li::before {
+  content: counter(item);
+  counter-increment: item;
+  margin-right: 8px;
+  color: #195273;
+}
+
+.list-choice-numbered li:hover {
+  background-color: #F8F8F8;
+  border-radius: 2px;
+}
+
+/* Bulleted List */
+.list-choice-bulleted li::before {
+  list-style-type: disc;
+  content: "\25A0";
+  color: #195273;
+  margin-right: 7px;
+}
+
+.list-choice-bulleted li:hover {
+  background-color: #F8F8F8;
+  color: #195273;
+  border-radius: 2px;
+}
