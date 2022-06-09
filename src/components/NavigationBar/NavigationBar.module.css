@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+.navigationBarContainer{
+    display: grid;
+    grid-template-columns: 0.1fr 0.2fr 0.2fr 0.2fr 0.2 0.1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    grid-template-areas: 
+    ". t1 t2 t3 t4 .";
+    width: 50em;
+    min-height: 5em;
+    border: 1px dashed #9747FF;
+    border-radius: 5px;
+}
+
+.menu1,
+.menu2,
+.menu3,
+.menu4{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    align-self: center;
+    color: #195273;
+    cursor: pointer;
+}
+
+.menu1 {
+    grid-area: t1;
+}
+.menu2 {
+    grid-area: t2;
+}
+.menu3 {
+    grid-area: t3;
+}
+.menu4 {
+    grid-area: t4;
+}
+
+
+.menu1:link,
+.menu2:link,
+.menu3:link,
+.menu4:link{
+    text-decoration: none;
+}
+
+
+.menu1:hover,
+.menu2:hover,
+.menu3:hover,
+.menu4:hover{
+    color: #fefefe;
+    background-color: #195273;
+    border-radius: 5px;
+}
+
+.menu1:focus,
+.menu2:focus,
+.menu3:focus,
+.menu4:focus{
+    color: #195273;
+    border-radius: 5px;
+    border: 1px solid #195273;
+}

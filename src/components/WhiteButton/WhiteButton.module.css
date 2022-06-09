@@ -8,7 +8,7 @@
     "message"
     "button";
     width: 25em;
-    min-height: 16em;
+    min-height: 15em;
     height: auto;
     background-color: #195273;
     border-radius: 10px;
@@ -20,10 +20,10 @@
     font-style: normal;
     font-weight: 300;
     font-size: 0.9rem;
-    line-height: 30px;
+    line-height: 23px;
     letter-spacing: 0.07em;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     justify-self: center;
     align-self: baseline;
     width: 90%;
@@ -42,7 +42,7 @@
     .hover{
         grid-area: button;
         width: 90%;
-        height: 3.7em;
+        padding: 1rem;
         justify-self: center;
         align-self: baseline;
         border-radius: 10px;
@@ -51,8 +51,7 @@
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 600;
-        font-size: 0.9rem;
-        letter-spacing: 0.07em;      
+        font-size: 1.1rem;   
     }
 
     .active{
