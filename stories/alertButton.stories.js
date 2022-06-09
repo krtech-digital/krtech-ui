@@ -22,10 +22,18 @@ export function Success() {
   );
 }
 
-export function Alert() {
+export function AlertError() {
   return (
     <>
-      <AlertButton variant="alert" heading="SOMETHING WENT WRONG :(" message="We are so sorry, can you try again?"></AlertButton>
+      <AlertButton variant="alert-error" heading="SOMETHING WENT WRONG :(" message="We are so sorry, can you try again?"></AlertButton>
+    </>
+  );
+}
+
+export function AlertSuccess() {
+  return (
+    <>
+      <AlertButton variant="alert-success" heading="ALL SET!" message="Well done, you’re all set! "></AlertButton>
     </>
   );
 }
