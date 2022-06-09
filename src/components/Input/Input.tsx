@@ -1,4 +1,4 @@
-import React, {HTMLAttributes, InputHTMLAttributes, ReactNode} from "react";
+import React, { InputHTMLAttributes } from "react";
 import style from "../Input/Input.module.css"
 
 export interface Props extends InputHTMLAttributes<HTMLInputElement> {
@@ -14,3 +14,4 @@ export const Input = ({label,...props}: Props) => {
         </form>
     )
 }
+

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+.whiteButtonBox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.3fr;
+    grid-template-areas: 
+    "colorBar ico headerText cancel"
+    "colorBar . descriptionText .";
+    width: 30em;
+    min-height: 7em;
+    height: auto;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+}

@@ -18,7 +18,6 @@ placeholder="PLACEHOLDER TEXT"
 
 
 
-
 export const EmailRequired = () => 
 <Input
 required
