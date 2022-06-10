@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
+
+.dialogBox {
+  display: grid;
+  grid-template-columns: 0.15fr 0.35fr 0.35fr 0.15fr;
+  grid-template-rows: 0.4fr 0.2fr 0.4fr;
+  grid-template-areas:
+    ". header header ."
+    ". desc desc ."
+    ". b1 b2 .";
+  width: 35em;
+  min-height: 15em;
+  border: 0.5px solid #d7d7d7;
+  border-radius: 10px;
+}
+
+.dialogBox2 {
+  display: grid;
+  grid-template-columns: 0.1fr 0.8fr 0.01fr;
+  grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+  grid-template-areas:
+    ". header ."
+    ". desc ."
+    ". b1v ."
+    ". b2v .";
+  width: 23em;
+  min-height: 25em;
+  border: 0.5px solid #d7d7d7;
+  border-radius: 10px;
+}
+
+.header {
+  grid-area: header;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0.07em;
+  color: #195273;
+  text-align: center;
+  align-self: center;
+}
+
+.desc {
+  grid-area: desc;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 0.07em;
+  color: #828282;
+  text-align: center;
+  align-self: baseline;
+}
+
+.b1,
+.b2,
+.b1v,
+.b2v {
+  margin-top: 10px;
+  width: 90%;
+  padding: 0.8rem;
+  justify-self: center;
+  align-self: baseline;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  background-color: #195273;
+  color: #ffffff;
+}
+
+.b1 {
+  grid-area: b1;
+}
+
+.b2 {
+  grid-area: b2;
+}
+
+.b1v {
+  align-self: center;
+}
+
+.b1v {
+  grid-area: b1v;
+}
+
+.b2v {
+  grid-area: b2v;
+}
+
+.b1:hover,
+.b2:hover,
+.b1v:hover,
+.b2v:hover {
+  background-color: #555555;
+  color: #ffffff;
+}

@@ -23,7 +23,7 @@ export const VariantAMultipleTilesWithText = () => (
     variant="a"
     firstText="DOCUMENTATION"
     secondText="Read more detail information about the project"
-    tileNumber={3}
+    tileNumber={5}
   />
 );
 
