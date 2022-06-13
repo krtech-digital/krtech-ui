@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+.input {
+    display: block;
+    padding: 3vh;
+    border: 0.5px solid #D7D7D7;
+    border-radius: 5px;
+    border-color: inherit;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.5vh;
+}
+
+.input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.5vh;
+}
+
+.label
+{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 4vh;
+line-height: 12px;
+letter-spacing: 0.07em;
+color: #195273;
+}
