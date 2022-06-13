@@ -16,8 +16,17 @@
   margin-right: 5px;
 }
 
-.default {
+.primary {
   background-color: #195273;
+}
+
+.secondary {
+  background-color: #f1f1f1;
+  color: #195273;
+}
+
+.critical {
+  background-color: #fd5656;
 }
 
 .noneShort {
