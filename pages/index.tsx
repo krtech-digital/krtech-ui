@@ -1,19 +1,27 @@
-import { Button , NavigationBar} from "@krtech-digital/krtech-ui";
+import { Button, NavigationBar } from "@krtech-digital/krtech-ui";
+import Link from "next/link";
+import { useRouter } from "next/router";
+
 // import Button from "../src/components/Button/Button";
 const Index = () => {
   const buttons = [
     {
-      url: 'urltest', 
-      name: 'button'
-    }
-  ]
+      url: "/",
+      name: "home",
+    },
+    {
+      url: "/about",
+      name: "about",
+    },
+  ];
+
+  const router = useRouter();
   return (
     <div className="App">
       <a href="/">Homepage</a>
       <br />
-      <a href="/about">Components</a>
-      <Button variant="none">Click</Button>
-      <NavigationBar buttons={buttons}></NavigationBar>
+      <Link href="/about">Components</Link>
+      <NavigationBar buttons={buttons} router={router}></NavigationBar>
       <br />
       <br />
     </div>

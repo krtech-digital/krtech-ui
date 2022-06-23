@@ -1,15 +1,33 @@
-*{
-    
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70px;
+  background-color: #dddddd;
 }
 
-.buttons{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 600;
-font-size: 11px;
-line-height: 13px;
-letter-spacing: 0.1em;
-font-feature-settings: 'pnum' on, 'onum' on;
-text-align: center;
-color: #195273;
+.buttons {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 13px;
+  letter-spacing: 0.1em;
+  font-feature-settings: "pnum" on, "onum" on;
+  text-align: center;
+  color: #195273;
+  padding: 10px 12px;
+  line-height: 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.buttons:hover {
+  color: #ffffff;
+  background: #195273;
+}
+
+.active {
+  border: 1px solid #195273;
+  background: none;
 }
