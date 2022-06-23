@@ -1,19 +1,62 @@
-.pagination{
-    position: absolute;
-    width: 130px;
-    height: 9px;
-    left: 75px;
-    top: 175px;
-    
+body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 8px;
+  }
+
+button {
+    border: none;
+    background-color: inherit;
+    font-weight: 600;
     line-height: 9px;
-    letter-spacing: 0.07em;
-    font-feature-settings: 'pnum' on, 'onum' on;
-    
-    /* Deep Blue */
-    color: #195273;
+    letter-spacing: 0.275em;
+    font-size: 8px;
+    font-feature-settings: "pnum", on, "onum", on;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+.arrowImage {
+    width: 15px;
+    height: 15px;
 }
 
+.paginationPages {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 5px;
+  }
+  
+  .customButton {
+    position: relative;
+    color:#195273;
+    padding: 5px;
+    -webkit-appearance: none;
+  }
+
+  .customButton img {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .customButtonActive {
+    background: #FD5656;
+    border-radius: 2px;
+    color:white;
+    -webkit-appearance: none;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
