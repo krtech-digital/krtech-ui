@@ -8,10 +8,12 @@ const Index = () => {
     {
       url: "/",
       name: "home",
+      active: true,
     },
     {
       url: "/about",
       name: "about",
+      active: false,
     },
   ];
 

@@ -8,6 +8,7 @@ export interface NavProps {
   buttons: {
     url: string;
     name: string;
+    active: boolean;
   }[];
   router: any;
 }
@@ -15,19 +16,17 @@ function NavigationBar({ buttons, router }: NavProps) {
   // const router = useRouter();
   const [active, setActive] = useState(-1);
 
-  const Navigate = (url: string, index: number) => {
-    console.log(url, index);
+  const Navigate = (url: string) => {
     router.push(url);
-    setActive(index);
   };
 
   return (
     <div className="navigation">
-      {buttons.map((element, index) => {
+      {buttons.map((element) => {
         return (
           <div
-            className={`buttons ${index === active ? "active" : ""}`}
-            onClick={(e) => Navigate(element.url, index)}
+            className={`buttons ${element.active ? "active" : ""}`}
+            onClick={(e) => Navigate(element.url)}
           >
             <a>{element.name}</a>
           </div>
