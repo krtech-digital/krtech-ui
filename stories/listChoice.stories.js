@@ -8,12 +8,18 @@ export default {
 
 export function Bulleted() {
   return (
-    <ListChoice listType="bulleted" />
+    <ListChoice 
+      listType="bulleted" 
+      listItems={["Home", "About"]}
+    />
   );
 }
 
 export function Numbered() {
   return (
-    <ListChoice listType="numbered" />
+    <ListChoice 
+      listType="numbered" 
+      listItems={["Home", "About"]}
+    />
   );
 }

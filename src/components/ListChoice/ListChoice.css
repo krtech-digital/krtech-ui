@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .list-choice {
-  color: #828282;;
+  color: #828282;
   list-style: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .list-choice li {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
 /* Numbered List */
@@ -28,6 +30,8 @@
 /* Bulleted List */
 .list-choice-bulleted li::before {
   list-style-type: disc;
+  height: 2px;
+  width: 2px;
   content: "\25A0";
   color: #195273;
   margin-right: 7px;
