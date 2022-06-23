@@ -4,8 +4,7 @@
 	background-color: rgba(249, 249, 249, 1);
 	border-radius: 5px 4px;
 	border-left: 4px solid #000;
-	padding: 24px 19px;
-	padding-right: 30px;
+	padding: 24px 30px 24px 19px;
 	max-width: 252px;
 	display: flex;
     justify-content: space-between;
@@ -59,12 +58,12 @@
 	display: block;
     width: 18px;
 	background-size: 18px auto;
-	background-repeat: no-repeat no-repeat;
 	margin-right: 20px;
 }
 
 .alertButton.message .icon {
 	background-image: url(../../../public/images/Envelope\ Message\ Received\ Icon.svg);
+    height: 18px;
 }
 
 .alertButton.success .icon {
@@ -85,10 +84,7 @@
 
 .alertButton .heading {
 	color: rgba(25, 82, 115, 1);
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	font-size: 12px;
-	font-weight: 600;
+	font: 600 12px 'Roboto', sans-serif;
 	line-height: 14px;
 	letter-spacing: 0.12em;
 	text-align: left;
@@ -96,9 +92,7 @@
 }
 
 .alertButton .message {
-	font-family: 'Roboto', sans-serif;
-	font-size: 9px;
-	font-weight: 400;
+	font: 400 9px 'Roboto', sans-serif;
 	line-height: 13px;
 	letter-spacing: 0em;
 	text-align: left;
