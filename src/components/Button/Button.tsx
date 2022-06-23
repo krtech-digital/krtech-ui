@@ -1,13 +1,17 @@
-import React from "react";
-import "./Button.css";
+import React, { HTMLAttributes, ReactNode } from "react";
+import style from "./Button.module.css";
 
-function Button(props: { [x: string]: any; variant: any; children: any }) {
-  const { variant, children, ...rest } = props;
+export interface Props extends HTMLAttributes<HTMLButtonElement> {
+  buttonText: string;
+  variant: string;
+}
+
+export const Button = ({ buttonText, variant, ...props }: Props) => {
   return (
-    <button className={`button ${variant}`} {...rest}>
-      {children}
+    <button className={`${style.button} ${style[variant]}`} {...props}>
+      {buttonText}
     </button>
   );
-}
+};
 
 export default Button;

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
+
+.drawer {
+  height: auto;
+  padding-bottom: 1em;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #dddddd;
+  overflow-x: hidden;
+  padding-top: 1em;
+  transition: 0.5s;
+}
+
+.left {
+  top: 0;
+  left: 0;
+}
+
+.right {
+  top: 0;
+  right: 0;
+}
+
+.drawer a {
+  padding: 8px 10px 30px 40px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.07em;
+  color: #828282;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.drawer a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.drawer,
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #195273;
+  border-radius: 1px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btnLine {
+  content: url(../Drawer/btnLine.svg);
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
