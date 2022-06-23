@@ -3,14 +3,14 @@
   justify-content: flex-start;
   align-items: center;
   height: 70px;
-  background-color: #dddddd;
+  background-color: #FBFBFB;
 }
 
 .buttons {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 11px;
   line-height: 13px;
   letter-spacing: 0.1em;
   font-feature-settings: "pnum" on, "onum" on;
@@ -21,6 +21,7 @@
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
+  margin: 20px;
 }
 .buttons:hover {
   color: #ffffff;
