@@ -11,8 +11,7 @@ const Test = () => {
         height: `100vh`,
       }}
     >
-      <Loading variant="loading" />
-      <Loading variant="loading-gray" />
+      <Loading />
     </div>
   );
 };

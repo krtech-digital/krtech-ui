@@ -1,46 +1,25 @@
-#loading {
-  width: 39px;
-  height: 39px;
-  border-radius: 50%;
-  display: inline-block;
-  border: 2px solid;
+.loader .circle {
+  stroke: #195273;
+  fill: none;
+  stroke-width: 3px;
+  stroke-dashoffset: -101.421px;
+  stroke-dasharray: 101.421px;
+  animation: loading 3s cubic-bezier(0.42, 0, 0.29, 1) infinite;
+  transform: rotate(-90deg);
+  transform-origin: 50%;
   position: relative;
-  animation: loader-animation 2s ease-in-out infinite;
 }
 
-@keyframes loader-animation {
+@keyframes loading {
   0% {
-    border-color: #195273 #fff #fff #fff;
+    stroke-dashoffset: 101.421px;
   }
-  33% {
-    border-color: #195273 #195273 #fff #fff;
+
+  50% {
+    stroke-dashoffset: 0;
   }
-  66% {
-    border-color: #195273 #195273 #195273 #fff;
-  }
+
   100% {
-    border-color: #195273 #195273 #195273 #195273;
+    stroke-dashoffset: -101.421px;
   }
-}
-
-#loading-gray {
-  width: 39px;
-  height: 39px;
-
-  border: 0.5px dashed #195273;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  animation: loader-animation 3s linear infinite;
-}
-
-#loading-gray::after {
-  content: "";
-  position: absolute;
-  border: 5px solid transparent;
-  border-right-color: #195273;
-  left: 25px;
-  top: 32px;
-  transform: rotate(-40deg);
 }
