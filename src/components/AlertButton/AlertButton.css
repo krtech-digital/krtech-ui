@@ -54,32 +54,30 @@
 }
 
 .alertButton .icon {
-	flex: none;
 	display: block;
     width: 18px;
-	background-size: 18px auto;
+    height: 18px;
 	margin-right: 20px;
 }
 
 .alertButton.message .icon {
-	background-image: url(../../../public/images/Envelope\ Message\ Received\ Icon.svg);
-    height: 18px;
+	content: url(../../../public/images/Envelope\ Message\ Received\ Icon.svg);
 }
 
 .alertButton.success .icon {
-	background-image: url(../../../public/images/Envelope\ Success\ Icon.svg);
+	content: url(../../../public/images/Envelope\ Success\ Icon.svg);
 }
 
 .alertButton.alert-error .icon {
-	background-image: url(../../../public/images/Failed\ Icon.svg);
+	content: url(../../../public/images/Failed\ Icon.svg);
 }
 
 .alertButton.alert-success .icon {
-	background-image: url(../../../public/images/Vector.svg);
+	content: url(../../../public/images/Vector.svg);
 }
 
 .alertButton.info .icon {
-	background-image: url(../../../public/images/Notice\ Icon.svg);
+	content: url(../../../public/images/Notice\ Icon.svg);
 }
 
 .alertButton .heading {
