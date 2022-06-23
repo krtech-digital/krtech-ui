@@ -61,15 +61,15 @@
 }
 
 .alertButton.message .icon {
-	content: url(../../../public/images/Envelope\ Message\ Received\ Icon.svg);
+	content: url(../../../public/images/EnvelopeMessageReceivedIcon.svg);
 }
 
 .alertButton.success .icon {
-	content: url(../../../public/images/Envelope\ Success\ Icon.svg);
+	content: url(../../../public/images/EnvelopeSuccessIcon.svg);
 }
 
 .alertButton.alert-error .icon {
-	content: url(../../../public/images/Failed\ Icon.svg);
+	content: url(../../../public/images/FailedIcon.svg);
 }
 
 .alertButton.alert-success .icon {
@@ -77,7 +77,7 @@
 }
 
 .alertButton.info .icon {
-	content: url(../../../public/images/Notice\ Icon.svg);
+	content: url(../../../public/images/NoticeIcon.svg);
 }
 
 .alertButton .heading {
