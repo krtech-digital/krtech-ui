@@ -1,16 +1,16 @@
 import React from "react";
-import "./Timeline.css";
+import style from "../Timeline/Timeline.module.css";
+import TimelinePoint from "./TimelinePoint";
 
-function Timeline(props: { [x: string]: any; variant: string; heading: string; message: string }) {
-	const { variant, heading, message, ...rest } = props;
+function Timeline(props: { [x: string]: any; variant: string; points: any[]; }) {
+	const { variant, points, ...rest } = props;
 	return (
-		<div className={`alertButton ${variant}`} {...rest}>
-			<span className="close">&#215;</span>
-			<div className="icon"></div>
-			<div>
-				<div className="heading">{heading}</div>
-				<div className="message">{message}</div>
-			</div>
+		<div className={`${style.timeline} ${variant}`} {...rest}>
+			{
+				points.map((point) => (
+					<TimelinePoint variant={point.variant} checked={point.checked} title={point.title} date={point.date} />
+				))
+			}
 		</div>
 	);
 }
