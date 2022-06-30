@@ -1,4 +1,4 @@
-import { Loading } from "@krtech-digital/krtech-ui";
+import InputStepper from "@krtech-digital/krtech-ui";
 
 const Test = () => {
   return (
@@ -11,7 +11,7 @@ const Test = () => {
         height: `100vh`,
       }}
     >
-      <Loading />
+      <InputStepper />
     </div>
   );
 };
