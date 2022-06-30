@@ -1,7 +1,11 @@
 import React from "react";
-import "./Button.css";
+import "./InputStepper.css";
 
-function Button1(props: { [x: string]: any; variant: any; children: any }) {
+function InputStepper(props: {
+  [x: string]: any;
+  variant: any;
+  children: any;
+}) {
   const { variant, children, ...rest } = props;
   return (
     <button className={`button ${variant}`} {...rest}>
@@ -10,4 +14,4 @@ function Button1(props: { [x: string]: any; variant: any; children: any }) {
   );
 }
 
-export default Button1;
+export default InputStepper;
