@@ -1,4 +1,4 @@
-import { Button, NavigationBar } from "@krtech-digital/krtech-ui";
+import { Button, NavigationBar, Switch } from "@krtech-digital/krtech-ui";
 import Link from "next/link";
 import { useRouter } from "next/router";
 // import Button from "../src/components/Button/Button";
