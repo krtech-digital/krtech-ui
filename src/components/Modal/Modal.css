@@ -59,7 +59,7 @@
   padding: 32px;
 }
 
-.modal__content--dark {
+.modal__content:nth-child(even){
   background-color: #F8F8F8;
 }
 

@@ -2,20 +2,17 @@ import * as React from 'react';
 import './Modal.css';
 
 export const Modal = ( props: { 
-  modalHeading: string; 
-  modalSubheading: string;
-  listDarkTitle: string;
-  listDarkItems: string[];
-  listLightTitle: string;
-  listLightItems: string[];
+  modalHeading: string,
+  modalSubheading: string,
+  modalListContent: { 
+    title: string,
+    items: string[]
+  }[]
   } ) => {
   const { 
-    modalHeading, 
-    modalSubheading, 
-    listDarkTitle, 
-    listDarkItems,
-    listLightTitle,
-    listLightItems,
+    modalHeading,
+    modalSubheading,
+    modalListContent,
     ...rest 
   } = props;
 
@@ -26,38 +23,22 @@ export const Modal = ( props: {
         <h4>{modalHeading}</h4>
         <p>{modalSubheading}</p>
       </div>
-      <div className="modal__content modal__content--dark">
-        <h4 className="modal__content-title">{listDarkTitle}</h4>
-        <ul className="modal__content-list">
-          {
-            listDarkItems.map((listDarkItem, i) => (    
+      {modalListContent.map((modalContent, i) => (
+        <div className="modal__content modal__content" key={i}>
+          <h4 className="modal__content-title">{modalContent.title}</h4>
+          <ul className="modal__content-list">
+            {modalContent.items.map((item, i) => (  
               <li className="modal__content-list-item" key={i}>
                 <div className="modal__content-list-item-title">
                   <span className="modal__content-list-item-title-icon"></span>
-                  <span className="modal__content-list-item-title-text">{listDarkItem}</span>
+                  <span className="modal__content-list-item-title-text">{item}</span>
                 </div>
-                <div className="modal__content-list-item-button">{listDarkItem}</div>
+                <div className="modal__content-list-item-button">{item}</div>
               </li>
-            ))
-          }
-        </ul>
-      </div>
-      <div className="modal__content">
-        <h4 className="modal__content-title">{listLightTitle}</h4>
-        <ul className="modal__content-list">
-          {
-            listLightItems.map((listLightItem, i) => (
-              <li className="modal__content-list-item" key={i}>
-                <div className="modal__content-list-item-title">
-                  <span className="modal__content-list-item-title-icon"></span>
-                  <span className="modal__content-list-item-title-text">{listLightItem}</span>
-                </div>
-                <div className="modal__content-list-item-button">{listLightItem}</div>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
+            ))}
+          </ul>
+        </div>
+      ))}
       <div className="modal__content-buttons">
         <div className="modal__content-button-close">
           <span>Close</span>
