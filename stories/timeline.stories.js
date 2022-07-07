@@ -16,8 +16,90 @@ export function Vertical1() {
 		},
 		{
 			variant: 'normal',
-			checked: false,
+			checked: true,
 			title: 'Point 2',
+			date: 'January 1, 21:00'
+		},
+		{
+			variant: 'normal',
+			checked: true,
+			title: 'Point 3',
+			date: 'January 1, 21:00'
+		},
+		{
+			variant: 'normal',
+			checked: false,
+			title: 'Point 4',
+			date: 'January 1, 21:00'
+		}
+	]
+  return (
+      <Timeline variant='vertical' points={points}></Timeline>
+  );
+}
+
+export function Finish() {
+	let points = [
+		{
+			variant: 'normal',
+			checked: true,
+			title: 'Point 1',
+			date: 'January 1, 21:00'
+		},
+		{
+			variant: 'normal',
+			checked: true,
+			title: 'Point 2',
+			date: 'January 1, 21:00'
+		},
+		{
+			variant: 'normal',
+			checked: true,
+			title: 'Point 3',
+			date: 'January 1, 21:00'
+		},
+		{
+			variant: 'normal',
+			checked: true,
+			title: 'Point 4',
+			date: 'January 1, 21:00'
+		},
+		{
+			variant: 'finish',
+			checked: true,
+			title: 'Finish',
+			date: 'January 1, 21:00'
+		}
+	]
+  return (
+      <Timeline variant='vertical' points={points}></Timeline>
+  );
+}
+
+export function Error() {
+	let points = [
+		{
+			variant: 'normal',
+			checked: true,
+			title: 'Point 1',
+			date: 'January 1, 21:00'
+		},
+		{
+			variant: 'error',
+			checked: true,
+			title: 'Point 2',
+			date: 'January 1, 21:00'
+		},
+		{
+			variant: 'normal',
+			checked: true,
+			title: 'Point 3',
+			date: 'January 1, 21:00'
+		},
+		{
+			variant: 'normal',
+			checked: true,
+			title: 'Point 4',
 			date: 'January 1, 21:00'
 		}
 	]
