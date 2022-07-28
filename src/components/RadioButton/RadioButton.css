@@ -1,0 +1,24 @@
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  vertical-align: bottom;
+  width: 18px;
+  height: 18px;
+  border-radius: 45px;
+  border: 6px solid #195273;
+}
+
+input[type="radio"]:checked + *::before {
+  background: radial-gradient(
+    #195273 0%,
+    #195273 30%,
+    transparent 40%,
+    transparent
+  );
+  border-color: #195273;
+}
