@@ -1,22 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ScrollDropDown.css";
 
-
 const ScrollDropDown = () => {
+  const [dropDown, setDropdown] = useState("");
 
   return (
-    <div>
-    <h1 className ="title">Drop Down</h1>
-    <select className="box" name="selectList" id="selectList">
-    <option value="option 1">Option 1</option>
-    <option value="option 2">Option 2</option>
-    <option value="option 3">Option 3</option>
-    <option value="option 4">Option 4</option>
-    <option value="option 5">Option 5</option>
-    <option value="option 6">Option 6</option>
-    </select>
+    <div
+      style={{
+        position: "relative",
+        display: "inline-flex",
+        flexDirection: "column",
+      }}
+    >
+      <h1
+        className="title"
+        style={{
+          display: "inline-block",
+        }}
+      >
+        DROP DOWN
+      </h1>
+      <div className="dropdown">
+        <div
+          style={{
+            position: "relative",
+          }}
+        >
+          <button
+            onClick={() => {
+              setDropdown(dropDown === "block" ? "" : "block");
+            }}
+            className="dropbtn"
+          >
+            Chose the option
+          </button>
+          <div
+            style={{ display: dropDown, position: "absolute", width: "100%" }}
+            className="dropdown-content"
+          >
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+            <a href="#">Option 4</a>
+            <a href="#">Option 5</a>
+            <a href="#">Option 6</a>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default ScrollDropDown;
