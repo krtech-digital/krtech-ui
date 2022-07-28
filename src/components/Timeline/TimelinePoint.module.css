@@ -1,26 +1,27 @@
 .timeline .point .check {
 	background-color: #fff;
-    border: 2.5px solid rgba(25, 82, 115, 1);
-    border-radius: 50%;
-    height: 26px;
-    width: 26px;
-    display: inline-block;
+	border: 2.5px solid rgba(25, 82, 115, 1);
+	border-radius: 50%;
+	height: 26px;
+	width: 26px;
+	display: inline-block;
 	vertical-align: middle;
 }
 
-.timeline .point.error .check::before,
+.timeline .point.error .check::after,
 .timeline .point .check::after {
-	content: "";
-    position: relative;
-    top: 6px;
-    left: 5px;
-    display: block;
-    border: 2.5px solid rgba(25, 82, 115, 1);
-    border-top: 0px;
-    border-right: 0px;
-    width: 10px;
-    height: 5px;
-    transform: rotate(320deg);
+	position: relative;
+	top: 7px;
+	left: 5px;
+	display: block;
+	width: 12px;
+	height: 9px;
+	content: '';
+	-webkit-mask: url('./check.svg') no-repeat 50% 50%;
+	mask: url('./check.svg') no-repeat 50% 50%;
+	-webkit-mask-size: cover;
+	mask-size: cover;
+	background-color: rgba(25, 82, 115, 1);
 }
 
 .timeline .point .check.checked {
@@ -28,38 +29,38 @@
 }
 
 .timeline .point .check.checked::after {
-	border-color: #fff;
+	background-color: #fff;
 }
 
 .timeline .point .title {
 	display: inline-block;
-    background-color: rgba(25, 82, 115, 1);
-    color: #fff;
-    padding: 3.5px 17px;
-    border-radius: 15px;
-    font: 600 12px 'Roboto', sans-serif;
-    vertical-align: middle;
+	background-color: rgba(25, 82, 115, 1);
+	color: #fff;
+	padding: 3.5px 17px;
+	border-radius: 15px;
+	font: 600 12px 'Roboto', sans-serif;
+	vertical-align: middle;
 	margin-left: 18px;
 	border: 2.5px solid rgba(25, 82, 115, 1);
 }
 
 .timeline .point .date {
 	color: rgba(25, 82, 115, 1);
-    font: 600 12px 'Roboto', sans-serif;
-    display: inline-block;
-    margin-left: 18px;
-    vertical-align: middle;
+	font: 600 12px 'Roboto', sans-serif;
+	display: inline-block;
+	margin-left: 18px;
+	vertical-align: middle;
 }
 
 .timeline .point::before {
-	content: "";
-    position: relative;
-    top: 0px;
-    left: 12px;
-    display: block;
-    border-left: 2.5px solid rgba(25, 82, 115, 1);
-    width: 0;
-    height: 85px;
+	content: '';
+	position: relative;
+	top: 0px;
+	left: 12px;
+	display: block;
+	border-left: 2.5px solid rgba(25, 82, 115, 1);
+	width: 0;
+	height: 85px;
 }
 
 .timeline .point:first-child::before {
@@ -84,27 +85,18 @@
 }
 
 .timeline .point.error .check::after {
-	height: 0;
-    top: 7px;
-    left: 3px;
-    transform: rotate(315deg);
-    border-left: 0;
-    width: 15px;
-}
-
-.timeline .point.error .check::before {
-	height: 0px;
-    border-left: 0;
-    width: 15px;
-    transform: rotate(45deg);
-    top: 9.5px;
-    left: 3.5px;
-    border-color: #fff;
+	top: 5px;
+	left: 5px;
+	width: 12px;
+	height: 12px;
+	-webkit-mask: url('./x.svg') no-repeat 50% 50%;
+	mask: url('./x.svg') no-repeat 50% 50%;
 }
 
 /* HOVERS */
 .timeline .point:hover::before {
 	border-left: 2.5px dashed rgba(204, 203, 203, 1);
+	background-color: transparent;
 }
 
 .timeline .point:hover .check {
@@ -112,12 +104,58 @@
 	background-color: #fff;
 }
 
-.timeline .point:hover .check::after {
-	border-color: rgba(25, 82, 115, 1);
-}
-
 .timeline .point:hover .title {
 	border: 2.5px solid rgba(204, 203, 203, 1);
 	background-color: #fff;
 	color: rgba(25, 82, 115, 1);
+}
+
+.timeline .point:hover .title span {
+	display: none;
+}
+
+.timeline .point:hover .title::before {
+	content: 'Change';
+}
+
+.timeline .point:hover .check.checked:after {
+	background-color: rgba(25, 82, 115, 1);
+}
+
+/**
+Horizontal
+ */
+
+.timeline.horizontal{
+display: flex;
+}
+
+.timeline.horizontal .point {
+	margin-left: 71px;
+	position: relative;
+}
+
+.timeline.horizontal .point:first-child {
+	margin-left: 0;
+}
+
+.timeline.horizontal .point .check,
+.timeline.horizontal .point .title {
+	display: block;
+	margin: 5px auto;
+}
+
+.timeline.timeline.horizontal .point::before {
+	content: '';
+    position: absolute;
+    top: 17px;
+    left: -97px;
+    display: block;
+    border-bottom: 2.5px solid rgba(25, 82, 115, 1);
+    height: 0;
+    width: 120px;
+}
+
+.timeline.horizontal .point:first-child::before {
+	display: none;
 }

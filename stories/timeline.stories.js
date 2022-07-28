@@ -61,7 +61,7 @@ export function Finish() {
 		{
 			variant: 'normal',
 			checked: true,
-			title: 'Point 4',
+			title: 'Point 4 longer text',
 			date: 'January 1, 21:00'
 		},
 		{
@@ -105,5 +105,28 @@ export function Error() {
 	]
   return (
       <Timeline variant='vertical' points={points}></Timeline>
+  );
+}
+
+export function Horizontal1() {
+	let points = [
+		{
+			variant: 'normal',
+			checked: true,
+			title: 'Point 1'
+		},
+		{
+			variant: 'normal',
+			checked: true,
+			title: 'Point 2'
+		},
+		{
+			variant: 'normal',
+			checked: false,
+			title: 'Point 3'
+		}
+	]
+  return (
+      <Timeline variant='horizontal' points={points}></Timeline>
   );
 }
