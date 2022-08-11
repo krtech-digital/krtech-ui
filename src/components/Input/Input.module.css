@@ -2,7 +2,6 @@
 
 .input {
     display: block;
-    padding: 3vh;
     border: 0.5px solid #D7D7D7;
     border-radius: 5px;
     border-color: inherit;
@@ -10,14 +9,14 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 3.5vh;
+    padding: 0.7rem;
+    margin-top: 0.6rem;
 }
 
 .input::placeholder{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 3.5vh;
 }
 
 .label
@@ -25,7 +24,6 @@
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 600;
-font-size: 4vh;
 line-height: 12px;
 letter-spacing: 0.07em;
 color: #195273;
