@@ -1,0 +1,38 @@
+.buttonLink {
+	border: none;
+	background-color: inherit;
+	color: #195273;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 4vh 4vw;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.primary {
+	color: #195273;
+}
+
+.primaryHover {
+	background: #F7F7F7;
+	color: #195273;
+	border-radius: 2px;
+}
+
+.secondary{
+	color: #A1DA8D;
+}
+
+.secondaryHover {
+	color: white;
+	background: #A1DA8D;
+	border-radius: 2px;
+}
