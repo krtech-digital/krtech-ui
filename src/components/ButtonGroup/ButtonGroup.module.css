@@ -1,0 +1,39 @@
+.buttonGroup {
+	display: flex;
+}
+
+.row{
+	flex-direction: row;
+}
+
+.buttonGroup button {
+	border-radius: 0;
+	margin-top: 5px;
+	max-width: fit-content;
+
+}
+
+.row button:first-child{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.row button:last-child{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+.column{
+	flex-direction: column;
+}
+
+.column button:first-child{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.column button:last-child{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
