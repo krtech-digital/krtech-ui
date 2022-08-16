@@ -1,0 +1,33 @@
+.radio {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 10px;
+	width: fit-content;
+}
+
+.radio input[type="radio"] {
+	-webkit-appearance: none;
+	appearance: none;
+	background: #fff;
+	/* this is needed for iOS. Otherwise the background just becomes black. */
+	font: inherit;
+	color: currentColor;
+	width: 1.15em;
+	height: 1.15em;
+	border: 0.15em solid currentColor;
+	border-radius: 50%;
+}
+
+.radio input[type="radio"]:checked {
+
+	box-shadow: inset 1em 1em blue;
+
+}
+
+.radio label {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	color: #828282;
+}

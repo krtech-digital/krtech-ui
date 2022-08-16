@@ -1,5 +1,5 @@
 import { Button } from "@krtech-digital/krtech-ui";
-import HorizontalScroll from "../src/components/HorizontalScroll/HorizontalScroll";
+import RadioButton from "../src/components/RadioButton/RadioButton";
 
 import React from "react";
 
@@ -12,7 +12,8 @@ const Index = () => {
 			<br />
 			<br />
 
-			<HorizontalScroll />
+			<RadioButton text="uranus" checked={false} />
+			<RadioButton text="mars" checked={true} />
 		</div>
 	);
 };
