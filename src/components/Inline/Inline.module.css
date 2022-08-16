@@ -1,0 +1,11 @@
+.inline {
+	display: grid;
+}
+
+.column {
+	grid-auto-flow: row;
+}
+
+.row {
+	grid-auto-flow: column;
+}
