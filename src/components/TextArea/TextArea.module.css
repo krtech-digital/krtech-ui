@@ -10,7 +10,8 @@
 	padding: 3vh;
 	height: 40vh;
 	width: 30vw;
-	outline: 0.5px solid #D7D7D7;
+	border: 0.5px solid #D7D7D7;
+	outline: none;
 	border-radius: 5px;
 	resize: none;
 }
@@ -19,9 +20,12 @@
 	outline: none;
 }
 
-.textArea:hover{
-	box-shadow: 0 0 30px #FBF8F8;
-	/* box-shadow: 0 0 30px #FBF8F8; */
+.hover{
+	box-shadow: 0 0 3px 10px #FBF8F8;
+}
+
+.normal{
+	box-shadow: none;
 }
 
 .label {

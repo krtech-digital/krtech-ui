@@ -13,6 +13,10 @@ export const Default = () => (
 	<TextArea
 		label="LABEL TEXT"
 		placeholder="PLACEHOLDER TEXT"
-		draggable={false}
+		variant="normal"
 	/>
+);
+
+export const Hover = () => (
+	<TextArea label="LABEL TEXT" placeholder="PLACEHOLDER TEXT" variant="hover" />
 );
