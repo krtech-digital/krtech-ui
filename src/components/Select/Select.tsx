@@ -15,8 +15,9 @@ const Select = ({ name, id, placeholder, options }: Props) => {
 			id={id}
 			placeholder={placeholder}
 			className={style.selectBox}
+			defaultValue=""
 		>
-			<option disabled={true} style={{ display: "none" }} value={placeholder}>
+			<option value="" disabled hidden>
 				{placeholder}
 			</option>
 			{options.map((row: string, index: number) => {
