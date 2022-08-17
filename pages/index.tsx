@@ -1,4 +1,5 @@
 import React from "react";
+import Switch from "../src/components/Switch/Switch";
 
 const Index = () => {
   return (
