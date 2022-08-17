@@ -12,7 +12,14 @@ const Select = ({ placeholder, options }: Props) => {
 	const [value, setValue] = useState(placeholder);
 
 	return (
-		<div className={style.wrapper}>
+		<div
+			className={style.wrapper}
+			onBlur={() => {
+				setShowOptions(false);
+				setBorder(false);
+			}}
+			tabIndex={0}
+		>
 			<div
 				className={style.buttonContainer}
 				onClick={() => {
@@ -23,10 +30,12 @@ const Select = ({ placeholder, options }: Props) => {
 			>
 				<div>{value}</div>
 				<img
-					src={"/images/right-arrow-icon.png"}
+					src={"/images/down-arrow.svg"}
 					alt="arrow"
 					style={{
-						transform: showOptions ? "rotate(-90deg)" : "rotate(90deg)",
+						transform: showOptions
+							? "rotate(180deg) scale(2)"
+							: "rotate(0deg) scale(2)",
 						transition: "transform 0.25s",
 					}}
 				/>
@@ -36,6 +45,7 @@ const Select = ({ placeholder, options }: Props) => {
 					{options.map((row: string, index: number) => {
 						return (
 							<div
+								key={index}
 								className={style.row}
 								onClick={() => {
 									setValue(row);
