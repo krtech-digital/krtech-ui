@@ -3,6 +3,7 @@ import RadioButton from "../src/components/RadioButton/RadioButton";
 import Select from "../src/components/Select/Select";
 
 import React from "react";
+import PictureCard from "../src/components/PictureCard/PictureCard";
 
 const Index = () => {
 	return (
@@ -12,12 +13,7 @@ const Index = () => {
 			<a href="/about">Components</a>
 			<br />
 			<br />
-			<Select
-				name="selekt"
-				id="selekt"
-				placeholder="dropenzi downenzi"
-				options={["prvi", "drugi", "treci", "u vreci"]}
-			/>
+			<PictureCard image="/images/Img2.png" alt="Mountain"></PictureCard>
 		</div>
 	);
 };
