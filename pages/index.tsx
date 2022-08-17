@@ -13,8 +13,6 @@ const Index = () => {
 			<br />
 			<br />
 			<Select
-				name="selekt"
-				id="selekt"
 				placeholder="dropenzi downenzi"
 				options={["prvi", "drugi", "treci", "u vreci"]}
 			/>
