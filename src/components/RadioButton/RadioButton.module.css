@@ -11,17 +11,16 @@
 	background: #fff;
 	/* this is needed for iOS. Otherwise the background just becomes black. */
 	font: inherit;
-	color: currentColor;
 	width: 1.15em;
 	height: 1.15em;
-	border: 0.15em solid currentColor;
+	border: 0.2em solid #195273;
 	border-radius: 50%;
+	transform: translateY(-0.1em);
 }
 
 .radio input[type="radio"]:checked {
-
-	box-shadow: inset 1em 1em blue;
-
+	background-color: #195273;
+	box-shadow: inset 0 0 0 0.2em #fff;
 }
 
 .radio label {

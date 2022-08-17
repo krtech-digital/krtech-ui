@@ -11,9 +11,6 @@ const Index = () => {
 			<a href="/about">Components</a>
 			<br />
 			<br />
-
-			<RadioButton text="uranus" checked={false} />
-			<RadioButton text="mars" checked={true} />
 		</div>
 	);
 };
