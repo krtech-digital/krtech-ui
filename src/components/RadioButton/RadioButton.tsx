@@ -1,24 +1,18 @@
-import React, { useState } from "react";
-import "./RadioButton.css";
+import React from "react";
+import style from "./RadioButton.module.css";
 
-const RadioButton = () => {
-  const [clicked, setClicked] = useState(false);
-  return (
-    <div>
-      <input
-        type="radio"
-        checked={clicked}
-        onChange={() => {
-          setClicked(!clicked);
-        }}
-      />
-      <div
-        onClick={() => {
-          setClicked(!clicked);
-        }}
-      />
-    </div>
-  );
+export interface Props {
+	text: string;
+	checked: boolean;
+}
+
+const RadioButton = ({ text, checked }: Props) => {
+	return (
+		<div className={style.radio}>
+			<input type="radio" checked={checked} />
+			<label>{text}</label>
+		</div>
+	);
 };
 
 export default RadioButton;
