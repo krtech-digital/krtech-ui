@@ -8,10 +8,6 @@ const meta: Meta = {
 };
 export default meta;
 
-export const Unchecked = () => {
-	return <RadioButton text="Radio" checked={false} />;
-};
-
-export const Checked = () => {
-	return <RadioButton text="Radio" checked={true} />;
+export const Default = () => {
+	return <RadioButton text="Radio" name="" />;
 };
