@@ -10,9 +10,10 @@ export default meta;
 
 export const Checkbox = () => (
 	<ChoiceGroup
-		label="Checkkbox group"
+		label="Checkbox group"
 		variant="checkbox"
 		options={["prvi", "drugi", "sesti", "osmi"]}
+		name=""
 	></ChoiceGroup>
 );
 
@@ -21,6 +22,7 @@ export const Radio = () => (
 		label="Radio group"
 		variant="radio"
 		options={["prvi", "drugi", "sesti", "osmi"]}
+		name="radio"
 	></ChoiceGroup>
 );
 
@@ -29,5 +31,6 @@ export const Undefined = () => (
 		label="Radio group"
 		variant="anything"
 		options={["prvi", "drugi", "sesti", "osmi"]}
+		name=""
 	></ChoiceGroup>
 );
