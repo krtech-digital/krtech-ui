@@ -1,4 +1,4 @@
-import { Button, Checkbox, RadioButton } from "@krtech-digital/krtech-ui";
+import { Button, Checkbox, RadioButton, Select } from "@krtech-digital/krtech-ui";
 import React from "react";
 
 const Index = () => {
@@ -9,6 +9,10 @@ const Index = () => {
 			<a href="/about">Components</a>
 			<br />
 			<br />
+			<Select
+				placeholder="dropenzi downenzi"
+				options={["prvi", "drugi", "treci", "u vreci"]}
+			/>
 		</div>
 	);
 };
