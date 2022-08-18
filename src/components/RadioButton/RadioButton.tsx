@@ -7,7 +7,7 @@ export interface Props {
 	id?: string;
 }
 
-const RadioButton = ({ text, name, id }: Props) => {
+export const RadioButton = ({ text, name, id }: Props) => {
 	return (
 		<div className={style.radio}>
 			<input type="radio" name={name} id={id === undefined ? undefined : id} />

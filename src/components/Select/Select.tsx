@@ -6,7 +6,7 @@ export interface Props {
 	options: string[];
 }
 
-const Select = ({ placeholder, options }: Props) => {
+export const Select = ({ placeholder, options }: Props) => {
 	const [showOptions, setShowOptions] = useState(false);
 	const [border, setBorder] = useState(false);
 	const [value, setValue] = useState(placeholder);

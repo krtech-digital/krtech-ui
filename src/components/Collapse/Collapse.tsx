@@ -1,20 +1,52 @@
-import React from "react";
+import React, { CSSProperties, useState } from "react";
 import style from "./Collapse.module.css";
 
 export interface Props {
 	title: string;
 	text: string;
+	width: string;
 }
 
-export const Collapse = ({ title, text }: Props) => {
+export const Collapse = ({ title, text, width }: Props) => {
+	const [collapsed, setCollapsed] = useState(false);
+
 	return (
 		<div className={style.wrapper}>
-			<div>
+			<div className={style.textDiv} style={{ maxWidth: width }}>
 				<div className={style.title}>{title}</div>
-				<div className={style.text}>{text}</div>
+				<div
+					className={style.text}
+					style={
+						collapsed
+							? ({ whiteSpace: "normal" } as CSSProperties)
+							: ({
+									textOverflow: "ellipsis",
+									overflow: "hidden",
+									whiteSpace: "nowrap",
+							  } as CSSProperties)
+					}
+				>
+					{text}
+				</div>
 			</div>
-			<div>
-				<div className={style.icon}></div>
+			<div className={style.imageDiv}>
+				<div
+					className={style.image}
+					onClick={() => {
+						console.log(!collapsed);
+
+						setCollapsed(!collapsed);
+					}}
+				>
+					<img
+						src={"/images/down-arrow.svg"}
+						alt="arrow"
+						style={{
+							transform: collapsed ? "rotate(180deg)" : "rotate(0deg)",
+							transition: "transform 0.25s",
+						}}
+					/>
+				</div>
 			</div>
 		</div>
 	);
