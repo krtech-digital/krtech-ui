@@ -1,0 +1,44 @@
+.bullet, .number {
+   list-style: none;
+   counter-reset: items 0;
+   color: #828282;
+   font-size: small;
+}
+.number{
+   content: counter(items);
+   counter-increment: my-awesome-counter;
+
+}
+
+.bullet li{
+   font-family: "Roboto", sans-serif;
+}
+ 
+ .bullet li::before {
+   display: flex;
+   text-align: center;
+   content: "\25A0";
+   color: #195273;
+   font-size: xx-small;
+   display: inline-block; 
+   width: 1em;
+   margin-left: -1.3em;
+   margin-right: 0.5em;
+   list-style-type: square;
+ }
+
+ .number li {
+   counter-increment: items;
+   font-family: "Roboto", sans-serif;
+ }
+
+ .number li::before {
+   content: counter(items);
+   color: #195273;
+   font-weight: bold;
+   display: inline-block; 
+   font-size: x-small;
+   width: 1em;
+   margin-left: -1em;
+   list-style-type: square;
+ }

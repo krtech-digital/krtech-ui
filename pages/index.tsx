@@ -1,4 +1,4 @@
-import { Button } from "@krtech-digital/krtech-ui";
+import React from "react";
 
 const Index = () => {
   return (
