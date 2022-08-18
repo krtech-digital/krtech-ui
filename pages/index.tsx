@@ -1,6 +1,4 @@
-import { Button } from "@krtech-digital/krtech-ui";
-import RadioButton from "../src/components/RadioButton/RadioButton";
-
+import { Button, Checkbox, RadioButton } from "@krtech-digital/krtech-ui";
 import React from "react";
 
 const Index = () => {
