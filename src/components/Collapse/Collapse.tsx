@@ -33,8 +33,6 @@ export const Collapse = ({ title, text, width }: Props) => {
 				<div
 					className={style.image}
 					onClick={() => {
-						console.log(!collapsed);
-
 						setCollapsed(!collapsed);
 					}}
 				>
