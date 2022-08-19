@@ -26,7 +26,6 @@ const HorizontalScroll = ({ children, items = false }: Props) => {
 					left: delta * 270,
 					behavior: "smooth",
 				});
-				console.log(e.currentTarget.scrollLeft);
 
 				// e.currentTarget.scrollLeft += delta * 50;
 			}}
