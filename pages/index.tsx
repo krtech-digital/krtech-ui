@@ -1,4 +1,5 @@
 import React from "react";
+import Loading from "../src/components/Loading/Loading";
 
 const Index = () => {
 	return (
@@ -8,6 +9,7 @@ const Index = () => {
 			<a href="/about">Components</a>
 			<br />
 			<br />
+			<Loading scale={1} />
 		</div>
 	);
 };
