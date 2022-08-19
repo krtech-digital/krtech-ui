@@ -17,13 +17,13 @@ export const Collapse = ({ title, text, width }: Props) => {
 				<div
 					className={style.text}
 					style={
-						collapsed
-							? ({ whiteSpace: "normal" } as CSSProperties)
-							: ({
+						(collapsed
+							? { whiteSpace: "normal" }
+							: {
 									textOverflow: "ellipsis",
 									overflow: "hidden",
 									whiteSpace: "nowrap",
-							  } as CSSProperties)
+							  }) as CSSProperties
 					}
 				>
 					{text}
