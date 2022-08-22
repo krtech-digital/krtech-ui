@@ -4,11 +4,8 @@
 	display: block;
 	border: 0.5px solid #D7D7D7;
 	border-radius: 5px;
-	border-color: inherit;
 	background-color: white;
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 300;
+	font: 300 inherit "Roboto", sans-serif;
 	padding: 0.7rem;
 	margin-top: 0.6rem;
 }
