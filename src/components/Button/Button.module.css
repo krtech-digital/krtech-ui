@@ -1,54 +1,36 @@
 .button {
-  border: none;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  padding: 4vh 4vw;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 5px;
+	border: none;
+	color: white;
+	font: 600 16px/14px "Roboto", sans-serif;
+
+	width: fit-content;
+	height: fit-content;
+	padding: 1rem 2rem;
+
+
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .primary {
-  background-color: #195273;
+	background-color: #195273;
 }
 
 .secondary {
-  background-color: #f1f1f1;
-  color: #195273;
+	background-color: #f1f1f1;
+	color: #195273;
 }
 
 .critical {
-  background-color: #fd5656;
+	background-color: #fd5656;
 }
 
-.noneShort {
-  padding: 15px 20px;
-}
-
-.hover,
-.hoverShort {
-  background-color: #555555;
-}
-
-.hoverShort {
-  padding: 15px 20px;
-}
-
-.active,
-.activeShort {
-  background-color: white;
-  color: #195293;
-  border: 2px solid #195293;
-}
-
-.activeShort {
-  padding: 15px 20px;
+.button:hover {
+	background-color: #555555;
+	color: #f1f1f1;
 }
