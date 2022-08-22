@@ -15,5 +15,3 @@ export const RadioButton = ({ text, name, id }: Props) => {
 		</div>
 	);
 };
-
-export default RadioButton;

@@ -51,5 +51,3 @@ const HorizontalScroll = ({ children, items = false }: Props) => {
 		</div>
 	);
 };
-
-export default HorizontalScroll;

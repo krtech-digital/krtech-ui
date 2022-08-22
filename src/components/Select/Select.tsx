@@ -65,5 +65,3 @@ export const Select = ({ placeholder, options }: Props) => {
 		</div>
 	);
 };
-
-export default Select;

@@ -14,5 +14,3 @@ const Header = ({ variant, text }: Props) => {
 	else if (variant === 5) return <h5>{text}</h5>;
 	else return <h6>{text}</h6>;
 };
-
-export default Header;

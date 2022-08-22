@@ -33,5 +33,3 @@ export const Checkbox = ({ label, checked }: Props) => {
 		</label>
 	);
 };
-
-export default Checkbox;

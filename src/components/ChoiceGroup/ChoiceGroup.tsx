@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Checkbox from "../Checkbox/Checkbox";
-import RadioButton from "../RadioButton/RadioButton";
+import { Checkbox } from "../Checkbox/Checkbox";
+import { RadioButton } from "../RadioButton/RadioButton";
 import style from "./ChoiceGroup.module.css";
 
 export interface Props {
@@ -36,5 +36,3 @@ export const ChoiceGroup = ({ label, variant, options, name }: Props) => {
 		</div>
 	);
 };
-
-export default ChoiceGroup;
