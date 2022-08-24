@@ -21,7 +21,7 @@ Normal.args = {
 export const Primary = () => <Button text="Item" variant="primary"></Button>;
 
 export const Secondary = () => (
-	<Button text="Item" variant="secondary"></Button>
+	<Button text="Item" variant="secondary" hoverVariant="primary"></Button>
 );
 
 export const Critical = () => <Button text="Item" variant="critical"></Button>;
