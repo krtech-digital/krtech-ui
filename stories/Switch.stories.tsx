@@ -1,10 +1,10 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import Switch from "../src/components/Switch/Switch";
+import { Switch } from "../src/components/Switch/Switch";
 
 const meta: Meta = {
-  title: "Switch",
-  component: Switch,
+	title: "Switch",
+	component: Switch,
 };
 
 export default meta;
