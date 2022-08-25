@@ -1,0 +1,73 @@
+/* Modal Box */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.modal-box {
+  max-width: 458px;
+  background: #FFFFFF;
+  box-shadow: -2px 15px 71px -27px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.modal-box__content {
+  padding: 32px 48px 26px 32px;
+  position: relative;
+}
+
+.modal-box__close {
+  position: absolute;
+  top: 23px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 2px;
+}
+
+.modal-box__close-button {
+  content: url("../../../public/images/x-icon.svg");
+}
+
+.modal-box__close:hover {
+  padding: 12px;
+  background-color: rgba(217, 217, 217, 0.2);
+}
+
+.modal-box__heading {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.07em;
+  font-feature-settings: 'pnum' on, 'onum' on;
+  color: #195273;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.modal-box__subheading {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.07em;
+  font-feature-settings: 'pnum' on, 'onum' on;
+  color: #828282;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.modal-box__text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  font-feature-settings: 'pnum' on, 'onum' on;
+  color: #828282;
+}
