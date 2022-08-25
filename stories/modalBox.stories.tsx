@@ -1,4 +1,5 @@
-import { ModalBox } from '../src/components/ModalBox/ModalBox';
+import React from "react";
+import { ModalBox } from "../src/components/ModalBox/ModalBox";
 
 export default {
   title: "ModalBox",
@@ -12,10 +13,10 @@ export function Default() {
   is dummy text used in laying out print, graphic or web designs.`;
 
   return (
-    <ModalBox 
-      modalBoxHeading={modalBoxHeading} 
-      modalBoxSubheading={modalBoxSubheading} 
-      modalBoxText={modalBoxText} 
+    <ModalBox
+      modalBoxHeading={modalBoxHeading}
+      modalBoxSubheading={modalBoxSubheading}
+      modalBoxText={modalBoxText}
     />
-  )
+  );
 }
