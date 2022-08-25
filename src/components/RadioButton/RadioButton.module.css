@@ -29,4 +29,6 @@
 	font-weight: 400;
 	font-size: 18px;
 	color: #828282;
+
+	user-select: none;
 }

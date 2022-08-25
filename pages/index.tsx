@@ -1,9 +1,6 @@
-import { Button } from "@krtech-digital/krtech-ui";
-import RadioButton from "../src/components/RadioButton/RadioButton";
-import Select from "../src/components/Select/Select";
-
 import React from "react";
 import PictureCard from "../src/components/PictureCard/PictureCard";
+import { Button } from "../src/components/Button/Button";
 
 const Index = () => {
 	return (

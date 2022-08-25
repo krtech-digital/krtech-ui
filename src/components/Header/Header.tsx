@@ -6,7 +6,7 @@ export interface Props {
 	text: string;
 }
 
-const Header = ({ variant, text }: Props) => {
+export const Header = ({ variant, text }: Props) => {
 	if (variant === 1) return <h1 className={style.h1}>{text}</h1>;
 	else if (variant === 2) return <h2>{text}</h2>;
 	else if (variant === 3) return <h3>{text}</h3>;
@@ -14,5 +14,3 @@ const Header = ({ variant, text }: Props) => {
 	else if (variant === 5) return <h5>{text}</h5>;
 	else return <h6>{text}</h6>;
 };
-
-export default Header;

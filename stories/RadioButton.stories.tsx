@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import RadioButton from "../src/components/RadioButton/RadioButton";
+import { RadioButton } from "../src/components/RadioButton/RadioButton";
 
 const meta: Meta = {
 	title: "RadioButton",
@@ -8,10 +8,6 @@ const meta: Meta = {
 };
 export default meta;
 
-export const Unchecked = () => {
-	return <RadioButton text="Radio" checked={false} />;
-};
-
-export const Checked = () => {
-	return <RadioButton text="Radio" checked={true} />;
+export const Default = () => {
+	return <RadioButton text="Radio" name="" />;
 };

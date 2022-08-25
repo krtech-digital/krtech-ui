@@ -1,18 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./RadioButton.module.css";
 
 export interface Props {
 	text: string;
-	checked: boolean;
+	name: string;
+	id?: string;
 }
 
-const RadioButton = ({ text, checked }: Props) => {
+export const RadioButton = ({ text, name, id }: Props) => {
 	return (
 		<div className={style.radio}>
-			<input type="radio" checked={checked} />
-			<label>{text}</label>
+			<input type="radio" name={name} id={id === undefined ? undefined : id} />
+			<label htmlFor={id === undefined ? undefined : id}>{text}</label>
 		</div>
 	);
 };
-
-export default RadioButton;

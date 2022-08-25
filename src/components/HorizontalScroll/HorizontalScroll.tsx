@@ -8,7 +8,7 @@ interface Props {
 
 // children should be 300px width
 
-const HorizontalScroll = ({ children, items = false }: Props) => {
+export const HorizontalScroll = ({ children, items = false }: Props) => {
 	return (
 		<div
 			className={style.wrapper}
@@ -26,7 +26,6 @@ const HorizontalScroll = ({ children, items = false }: Props) => {
 					left: delta * 270,
 					behavior: "smooth",
 				});
-				console.log(e.currentTarget.scrollLeft);
 
 				// e.currentTarget.scrollLeft += delta * 50;
 			}}
@@ -52,5 +51,3 @@ const HorizontalScroll = ({ children, items = false }: Props) => {
 		</div>
 	);
 };
-
-export default HorizontalScroll;

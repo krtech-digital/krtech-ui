@@ -1,35 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Select.module.css";
 
-interface Props {
-	name: string;
-	id: string;
+export interface Props {
 	placeholder: string;
 	options: string[];
 }
 
-const Select = ({ name, id, placeholder, options }: Props) => {
+export const Select = ({ placeholder, options }: Props) => {
+	const [showOptions, setShowOptions] = useState(false);
+	const [border, setBorder] = useState(false);
+	const [value, setValue] = useState(placeholder);
+
 	return (
-		<select
-			name={name}
-			id={id}
-			placeholder={placeholder}
-			className={style.selectBox}
-			defaultValue=""
+		<div
+			className={style.wrapper}
+			onBlur={() => {
+				setShowOptions(false);
+				setBorder(false);
+			}}
+			tabIndex={0}
 		>
-			<option value="" disabled hidden>
-				{placeholder}
-			</option>
-			{options.map((row: string, index: number) => {
-				console.log(row, index);
-				return (
-					<option key={index} value={index} className={style.row}>
-						{row}
-					</option>
-				);
-			})}
-		</select>
+			<div
+				className={style.buttonContainer}
+				onClick={() => {
+					setShowOptions(!showOptions);
+					setBorder(!border);
+				}}
+				style={{ borderColor: border ? "#195273" : "#D7D7D7" }}
+			>
+				<div>{value}</div>
+				<img
+					src={"/images/down-arrow.svg"}
+					alt="arrow"
+					style={{
+						transform: showOptions
+							? "rotate(180deg) scale(2)"
+							: "rotate(0deg) scale(2)",
+						transition: "transform 0.25s",
+					}}
+				/>
+			</div>
+			{showOptions ? (
+				<div className={style.options}>
+					{options.map((row: string, index: number) => {
+						return (
+							<div
+								key={index}
+								className={style.row}
+								onClick={() => {
+									setValue(row);
+
+									setShowOptions(false);
+									setBorder(false);
+								}}
+							>
+								{row}
+							</div>
+						);
+					})}
+				</div>
+			) : (
+				<></>
+			)}
+		</div>
 	);
 };
-
-export default Select;
