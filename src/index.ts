@@ -28,7 +28,7 @@ import { Select } from "./components/Select/Select";
 import { Separator } from "./components/Separator/Separator";
 import { Stepper } from "./components/Stepper/Stepper";
 import { TextArea } from "./components/TextArea/TextArea";
-import Switch from "./components/Switch/Switch";
+import { Switch } from "./components/Switch/Switch";
 import { Tiles } from "./components/Tiles/Tiles";
 import { Toast } from "./components/Toast/Toast";
 import { WhiteButton } from "./components/WhiteButton/WhiteButton";

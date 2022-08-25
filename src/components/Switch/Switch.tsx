@@ -5,12 +5,10 @@ export interface Props {
   variant: string;
 }
 
-const Switch = ({ variant }: Props) => {
+export const Switch = ({ variant }: Props) => {
   return (
     <div className={`${style.outer} ${style[variant]}`}>
       <div className={style.inner}></div>
     </div>
   );
 };
-
-export default Switch;
