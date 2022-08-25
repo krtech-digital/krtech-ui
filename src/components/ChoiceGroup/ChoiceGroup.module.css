@@ -1,0 +1,14 @@
+.title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+
+	color: #195273;
+}
+
+.formGrid {
+	display: grid;
+	grid-auto-flow: row;
+	gap: 10px;
+	width: fit-content;
+}
