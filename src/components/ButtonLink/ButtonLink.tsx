@@ -13,5 +13,3 @@ export const ButtonLink = ({ buttonText, variant, ...props }: Props) => {
 		</button>
 	);
 };
-
-export default ButtonLink;

@@ -22,5 +22,3 @@ export const PictureCard = ({ image, alt }: Props) => {
 		</div>
 	);
 };
-
-export default PictureCard;
