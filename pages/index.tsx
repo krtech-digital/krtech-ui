@@ -1,6 +1,6 @@
 import React from "react";
+import PictureCard from "../src/components/PictureCard/PictureCard";
 import { Button } from "../src/components/Button/Button";
-import { Input } from "../src/components/Input/Input";
 
 const Index = () => {
 	return (
@@ -10,7 +10,7 @@ const Index = () => {
 			<a href="/about">Components</a>
 			<br />
 			<br />
-			<Input type="date" label={"krac"} />
+			<PictureCard image="/images/Img2.png" alt="Mountain"></PictureCard>
 		</div>
 	);
 };
