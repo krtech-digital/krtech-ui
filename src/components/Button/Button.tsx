@@ -1,13 +1,38 @@
-import React from "react";
-import "./Button.css";
+import React, { HTMLAttributes, useState } from "react";
+import style from "./Button.module.css";
 
-function Button(props: { [x: string]: any; variant: any; children: any }) {
-  const { variant, children, ...rest } = props;
-  return (
-    <button className={`button ${variant}`} {...rest}>
-      {children}
-    </button>
-  );
+export interface Props extends HTMLAttributes<HTMLButtonElement> {
+	text: string;
+	variant: string;
+	hoverVariant?: string;
+	width?: string;
+	height?: string;
+	padding?: string;
 }
 
-export default Button;
+export const Button = ({
+	text,
+	variant,
+	hoverVariant = "hover",
+	width,
+	height,
+	padding,
+	...props
+}: Props) => {
+	const [variantStyle, setVariantStyle] = useState(variant);
+	return (
+		<button
+			className={`${style.button} ${style[variantStyle]}`}
+			style={{ width, height, padding }}
+			onMouseEnter={() => {
+				setVariantStyle(hoverVariant);
+			}}
+			onMouseLeave={() => {
+				setVariantStyle(variant);
+			}}
+			{...props}
+		>
+			{text}
+		</button>
+	);
+};

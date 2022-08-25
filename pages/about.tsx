@@ -1,11 +1,10 @@
 import { Button } from "@krtech-digital/krtech-ui";
+import { Popover } from "../src/components/Popover/Popover";
 
 const About = () => {
   return (
     <div className="App">
-      <Button variant={"hover"}>
-        <span>Test</span>
-      </Button>
+      <Popover></Popover>
     </div>
   );
 };

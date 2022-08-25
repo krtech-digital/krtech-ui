@@ -1,0 +1,36 @@
+.button {
+	border: none;
+	color: white;
+	font: 500 16px/14px "Roboto", sans-serif;
+
+	width: fit-content;
+	height: fit-content;
+	padding: 1rem 2rem;
+
+
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.primary {
+	background-color: #195273;
+}
+
+.secondary {
+	background-color: #f1f1f1;
+	color: #195273;
+}
+
+.critical {
+	background-color: #fd5656;
+}
+
+.hover {
+	background-color: #555555;
+	color: #f1f1f1;
+}
