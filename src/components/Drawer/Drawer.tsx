@@ -1,41 +1,40 @@
-import React, { HTMLAttributes } from "react";
+import React, { HTMLAttributes, ReactElement, useState } from "react";
+import { Button } from "../Button/Button";
 import style from "../Drawer/Drawer.module.css";
 
 export interface Props extends HTMLAttributes<HTMLLinkElement> {
   popupPosition: string;
-  itemsList: string[];
+  itemsList: Array<ReactElement>;
 }
 
 export const Drawer = ({ popupPosition, itemsList }: Props) => {
-  function returnItemsInList() {
-    let linkedList = [];
-    for (let index = 0; index < itemsList.length; index++) {
-      linkedList.push(<a>{`${itemsList[index]}`}</a>);
-    }
-    return linkedList;
-  }
+  const [btnPressed, setBtnPressed] = useState(false);
 
   return (
-    <div>
-      <div id="drawer" className={`${style.drawer}  ${style[popupPosition]}`}>
-        <a
-          className={style.closebtn}
-          onClick={() => {
-            document.getElementById("drawer")!.style.width = "0em";
-          }}
-        >
-          X
-        </a>
-        {returnItemsInList()}
-      </div>
+    <>
       <button
         className={style.openbtn}
         onClick={() => {
-          document.getElementById("drawer")!.style.width = "10em";
+          setBtnPressed(!btnPressed);
         }}
       >
-        <div className={style.btnLine}></div>
+        <img className={style.btnLine} src="images/btnLine.svg" />
       </button>
-    </div>
+      <div className={style.center}>
+        {btnPressed && (
+          <div className={`${style.drawer} ${style[popupPosition]}`}>
+            <div
+              className={style.closebtn}
+              onClick={() => setBtnPressed(!btnPressed)}
+            >
+              <img src="images/FailedIcon.svg" />
+            </div>
+            {itemsList.map((item, index) => {
+              return React.cloneElement(item, { key: index });
+            })}
+          </div>
+        )}
+      </div>
+    </>
   );
 };
