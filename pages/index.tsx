@@ -1,4 +1,5 @@
 import React from "react";
+import Switch from "../src/components/Switch/Switch";
 import PictureCard from "../src/components/PictureCard/PictureCard";
 import { Button } from "../src/components/Button/Button";
 

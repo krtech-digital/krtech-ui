@@ -1,0 +1,24 @@
+.outer {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 7px;
+   height: 46  px;
+   width: 110px;
+   border-radius: 30px;
+}
+.inner {
+   display: flex;
+   height: 45px;
+   width: 45px;
+   border-radius: 45px;
+   background-color: white;
+}
+.off{
+   background-color: #E3E3E3;
+   justify-content: flex-start;
+}
+.on {
+   background-color: #195273;
+   justify-content: flex-end;
+}

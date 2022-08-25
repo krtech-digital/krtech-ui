@@ -1,0 +1,19 @@
+.toast {
+   display: flex;
+   align-items: center;
+   text-align:left;
+   position: absolute;
+   padding: 1vh 10vw;
+   padding-left: 1vw;
+   background: #171717;
+   color: #fff;
+   border-radius: 6px;
+   font:  "Roboto", sans-serif normal 600 12px;
+   line-height: 12px;
+   opacity: 1;
+   transition: opacity 2s;
+}
+
+.link{
+   color: #0EA3ED;
+}
