@@ -5,7 +5,7 @@ export interface Props {
 	scale: number;
 }
 
-const Loading = ({ scale }: Props) => {
+export const Loading = ({ scale }: Props) => {
 	return (
 		<div className={style.wrapper}>
 			<div className={style.loader} style={{ transform: `scale(${scale})` }}>
@@ -16,5 +16,3 @@ const Loading = ({ scale }: Props) => {
 		</div>
 	);
 };
-
-export default Loading;

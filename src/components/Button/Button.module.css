@@ -1,7 +1,7 @@
 .button {
 	border: none;
 	color: white;
-	font: 600 16px/14px "Roboto", sans-serif;
+	font: 500 16px/14px "Roboto", sans-serif;
 
 	width: fit-content;
 	height: fit-content;
@@ -30,7 +30,7 @@
 	background-color: #fd5656;
 }
 
-.button:hover {
+.hover {
 	background-color: #555555;
 	color: #f1f1f1;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import Select from "../src/components/Select/Select";
+import { Select } from "../src/components/Select/Select";
 
 const meta: Meta = {
 	title: "Select",

@@ -49,5 +49,3 @@ export const Collapse = ({ title, text, width }: Props) => {
 		</div>
 	);
 };
-
-export default Collapse;

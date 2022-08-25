@@ -8,7 +8,7 @@ interface Props {
 
 // children should be 300px width
 
-const HorizontalScroll = ({ children, items = false }: Props) => {
+export const HorizontalScroll = ({ children, items = false }: Props) => {
 	return (
 		<div
 			className={style.wrapper}
@@ -51,5 +51,3 @@ const HorizontalScroll = ({ children, items = false }: Props) => {
 		</div>
 	);
 };
-
-export default HorizontalScroll;
