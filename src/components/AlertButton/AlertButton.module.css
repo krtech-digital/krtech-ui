@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+.alertBox{
+    display: grid;
+    grid-template-columns: 0.01fr 0.19fr 0.7fr 0.1fr;
+    grid-template-rows: 0.2fr 0.3fr 0.5fr;
+    grid-template-areas: 
+    "colorBar . . cancel"
+    "colorBar ico headerText cancel"
+    "colorBar . descriptionText .";
+    width: 30em;
+    min-height: 7em;
+    height: auto;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+}
+
+.colorBarR,
+.colorBarG,
+.colorBarB{
+    grid-area: colorBar;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.colorBarR{
+    background-color: #FD5656;
+}
+
+.colorBarG{
+    background-color: #A1DA8D;
+}
+
+.colorBarB{
+    background-color: #50BAF5;
+}
+
+.cancelBlue,
+.cancelRed,
+.cancelGreen{
+    grid-area: cancel; 
+    align-self: baseline;
+    justify-self: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+.cancelBlue{
+    content: url(../AlertButton/cancel_blue.svg);
+}
+
+.cancelRed{
+    content: url(../AlertButton/cancel_red.svg);
+}
+
+.cancelGreen{
+    content: url(../AlertButton/cancel_green.svg);
+}
+
+
+.iconMessage,
+.iconSuccess,
+.iconAlertFail,
+.iconAlertSuccess,
+.iconInfo{
+    grid-area: ico;
+    align-self: center;
+    justify-self: center;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.iconMessage{
+    content: url(../AlertButton/message_icon.svg);
+}
+
+.iconSuccess{
+    content: url(../AlertButton/success-Icon.svg);
+}
+
+.iconAlertFail{
+    content: url(../AlertButton/alert_fail.svg);
+}
+
+.iconAlertSuccess{
+    content: url(../AlertButton/alert_success.svg);
+}
+
+.iconInfo{
+    content: url(../AlertButton/info_icon.svg);
+}
+
+.headerText{
+grid-area: headerText;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 1.2rem;
+line-height: 12px;
+letter-spacing: 0.07em;
+color: #195273;
+text-align: left;
+align-self: center;
+}
+
+.descriptionText{
+grid-area: descriptionText;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 1rem;
+line-height: 30px;
+letter-spacing: 0.07em;
+color: #828282;
+text-align: left;
+align-self: baseline;
+width: 95%;
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
+
+.tileContainerS {
+  display: grid;
+  grid-template-columns: 0.15fr 0.7fr 0.15fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas:
+    "iLeft header iRight"
+    ". dtext iRight";
+  width: 40em;
+  min-height: 6em;
+  border: 0.5px solid #d7d7d7;
+  border-radius: 10px;
+  padding-top: 15px;
+}
+
+.tileContainerH {
+  display: grid;
+  grid-template-columns: 0.1fr 0.3fr 0.5fr 0.1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "iLeftH headerB1 headerB2 iDownload";
+  width: 40em;
+  min-height: 5em;
+  border: 0.5px solid #d7d7d7;
+  border-radius: 10px;
+}
+
+.iLeft {
+  grid-area: iLeft;
+  content: url(../Tiles/document.svg);
+  align-self: center;
+  justify-self: center;
+  height: 1.9rem;
+  width: 1.9rem;
+  margin-top: 10px;
+}
+
+.iLeftH {
+  grid-area: iLeftH;
+  content: url(../Tiles/document.svg);
+  align-self: center;
+  justify-self: center;
+  height: 1.9rem;
+  width: 1.9rem;
+}
+
+.header {
+  grid-area: header;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.07em;
+  color: #195273;
+  text-align: left;
+  align-self: center;
+}
+
+.headerB1,
+.headerB2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.headerB1 {
+  grid-area: headerB1;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.07em;
+  color: #195273;
+  text-align: center;
+  align-self: center;
+}
+
+.headerB2 {
+  grid-area: headerB2;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: 0.07em;
+  color: #195273;
+  text-align: left;
+  align-self: center;
+}
+
+.iRight {
+  grid-area: iRight;
+  content: url(../Tiles/aRight.svg);
+  align-self: center;
+  justify-self: center;
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-top: -20px;
+}
+
+.iDownload {
+  grid-area: iDownload;
+  content: url(../Tiles/download.svg);
+  align-self: center;
+  justify-self: center;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.dtext {
+  grid-area: dtext;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.07em;
+  color: #828282;
+  text-align: left;
+  align-self: baseline;
+}
