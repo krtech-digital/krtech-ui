@@ -8,10 +8,7 @@
    background: #171717;
    color: #fff;
    border-radius: 6px;
-   font-family: "Roboto", sans-serif;
-   font-style: normal;
-   font-weight: 600;
-   font-size: 12px;
+   font:  "Roboto", sans-serif normal 600 12px;
    line-height: 12px;
    opacity: 1;
    transition: opacity 2s;
