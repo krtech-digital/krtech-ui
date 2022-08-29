@@ -1,11 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-.npmrc
 
 # Dependencies
 node_modules
 test/node_modules
 .pnp
 .pnp.js
+.npmrc
 
 # Testing
 coverage
