@@ -13,6 +13,7 @@ export const Default = () => {
 		<Select
 			placeholder="This is a drop down select box"
 			options={["Option 1", "Option 2", "Option 3"]}
+			width="800px"
 		/>
 	);
 };

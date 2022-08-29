@@ -3,10 +3,11 @@ import style from "./Select.module.css";
 
 export interface Props {
 	placeholder: string;
+	width?: string;
 	options: string[];
 }
 
-export const Select = ({ placeholder, options }: Props) => {
+export const Select = ({ placeholder, options, width = "400px" }: Props) => {
 	const [showOptions, setShowOptions] = useState(false);
 	const [border, setBorder] = useState(false);
 	const [value, setValue] = useState(placeholder);
@@ -14,6 +15,7 @@ export const Select = ({ placeholder, options }: Props) => {
 	return (
 		<div
 			className={style.wrapper}
+			style={{ width: width }}
 			onBlur={() => {
 				setShowOptions(false);
 				setBorder(false);
