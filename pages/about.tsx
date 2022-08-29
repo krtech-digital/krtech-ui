@@ -1,10 +1,9 @@
-import { Button } from "@krtech-digital/krtech-ui";
-import { Popover } from "../src/components/Popover/Popover";
-
+import React from "react";
+import { Drawer } from "../src/components/Drawer/Drawer";
 const About = () => {
   return (
     <div className="App">
-      <Popover></Popover>
+      <Drawer itemsList={[<></>]} popupPosition="right"></Drawer>
     </div>
   );
 };

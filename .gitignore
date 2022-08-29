@@ -5,6 +5,7 @@ node_modules
 test/node_modules
 .pnp
 .pnp.js
+.npmrc
 
 # Testing
 coverage
