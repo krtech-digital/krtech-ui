@@ -1,39 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
 .textArea {
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 1.2vw;
-	line-height: 147.9%;
+   font: 300 1.5em/1em 'Roboto', sans-serif;
 	letter-spacing: 0.02em;
-	padding: 3vh;
-	height: 40vh;
-	width: 30vw;
+	padding: 0.5em;
+	height: 5em;
+	width: 15em;
 	border: 0.5px solid #D7D7D7;
 	outline: none;
 	border-radius: 5px;
-	resize: none;
+	resize: vertical;
+   box-shadow: none;
 }
 
-.textArea:focus{
-	outline: none;
-}
-
-.hover{
+.textArea:hover{
 	box-shadow: 0 0 3px 10px #FBF8F8;
 }
 
-.normal{
-	box-shadow: none;
-}
-
 .label {
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 4vh;
-	line-height: 12px;
+   font: 600 2em/0.5em 'Roboto', sans-serif;
 	letter-spacing: 0.07em;
 	color: #195273;
 }
