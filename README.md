@@ -1,5 +1,7 @@
 # React Library Template (TypeScript)
 
+# Latest version: 0.3.5
+
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
 Instantly create TypeScript-based React Component Library with this open-source template repo.
