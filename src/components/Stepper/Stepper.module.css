@@ -1,51 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
-.stepperBox{
-    display: grid;
-    grid-template-columns: 0.3fr 0.4fr 0.3fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "minus counter plus";
-    width: 15em;
-    min-height: 3em;
-    height: auto;
+.stepperBox {
+	display: grid;
+	grid-template-columns: 0.3fr 0.4fr 0.3fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"minus counter plus";
+	width: fit-content;
+	min-height: 3em;
+	height: auto;
 }
 
 .plus,
-.minus{
-    grid-area: plus;
-    width: 70%;
-    height: 100%;
-    justify-self: center;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.5rem;
-    letter-spacing: 0.07em;
-    color: #fefefe;
-    background-color: #195273;
+.minus {
+	grid-area: plus;
+	width: 3rem;
+	height: 100%;
+	justify-self: center;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.5rem;
+	letter-spacing: 0.07em;
+	color: #fefefe;
+	background-color: #195273;
 }
 
-.counter{
-    grid-area: counter;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
-    letter-spacing: 0.07em;
-    color: #828282;
-    text-align: center;
-    align-self: center;
+.counter {
+	grid-area: counter;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.5rem;
+	letter-spacing: 0.07em;
+	color: #828282;
+	text-align: center;
+	align-self: center;
 
 }
 
-.minus{
-    grid-area: minus
+.minus {
+	grid-area: minus
 }
 
-.plus{
-    grid-area: plus
+.plus {
+	grid-area: plus
 }
