@@ -4,9 +4,9 @@
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/krtech-ui"
+    "registry": "https://registry.npmjs.org/"
   },
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "A simple template for a custom React component library",
   "devDependencies": {
     "@babel/core": "^7.17.5",
